@@ -1,0 +1,39 @@
+.beat-line {
+  display: flex;
+  margin-bottom: 10px;
+
+  .label {
+      padding: 20px;
+      font-weight: bold;
+      width: 15%;
+  }
+
+  .cell-container {
+    display: flex;
+
+    .cell {
+      border-top: 1px dashed $grey-2;
+      border-right: 1px dashed $grey-2;
+      border-bottom: 1px dashed $grey-2;
+      padding: 10px;
+
+      &:first-child {
+        border: 1px dashed $grey-2;
+      }
+
+      input {
+        width: 40px;
+        height: 30px;
+        border: 1px solid $grey-2;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      span {
+        padding: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
