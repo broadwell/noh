@@ -13,7 +13,7 @@ class BeatsEditor extends Component {
       syllable_text: this.props.syllable_text,
       syllable_number: this.props.syllable_number,
       vocal: this.props.vocal,
-      nokan: this.props.nokan,
+      nohkan: this.props.nohkan,
       dance: this.props.dance
     };
     this.onClick = this.onClick.bind(this);
@@ -21,9 +21,7 @@ class BeatsEditor extends Component {
   }
 
   onClick(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
+    const { name, value} = event.target;
     this.setState({
       [name]: value
     });
@@ -65,18 +63,21 @@ class BeatsEditor extends Component {
           name="vocal"
           grid={this.props.grid}
           cellType="click"
+          value={ this.state.vocal }
         />
         <BeatLine
-          label="Nokan"
-          name="nokan"
+          label="Nohkan"
+          name="nohkan"
           grid={this.props.grid}
           cellType="click"
+          value={ this.state.nohkan }
         />
         <BeatLine
           label="Dance"
           name="dance"
           grid={this.props.grid}
           cellType="click"
+          value={ this.state.dance }
         />
         <input type="button" value="Download" onClick={ this.onClick }/>
         <span>as</span>
@@ -94,12 +95,12 @@ class BeatsEditor extends Component {
 BeatsEditor.propTypes = {
   grid: PropTypes.number,
   filename: PropTypes.string,
-  beats: PropTypes.array,
-  syllable_text: PropTypes.array,
-  syllable_number: PropTypes.array,
-  vocal: PropTypes.array,
-  nokan: PropTypes.array,
-  dance: PropTypes.array
+  beats: PropTypes.arrayOf(PropTypes.string),
+  syllable_text: PropTypes.arrayOf(PropTypes.string),
+  syllable_number: PropTypes.arrayOf(PropTypes.string),
+  vocal: PropTypes.arrayOf(PropTypes.string),
+  nohkan: PropTypes.arrayOf(PropTypes.string),
+  dance: PropTypes.arrayOf(PropTypes.string)
 }
 
 BeatsEditor.defaultProps = {
@@ -109,7 +110,7 @@ BeatsEditor.defaultProps = {
   syllable_text: [] ,
   syllable_number: [],
   vocal: [],
-  nokan: [],
+  nohkan: [],
   dance: []
 }
 

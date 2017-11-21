@@ -3,6 +3,6 @@ _site
 .jekyll-metadata
 node_modules
 
-src/assets/bundle.js
+src/assets/*.bundle.js
 
 coverage/

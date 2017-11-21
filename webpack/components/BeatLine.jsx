@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -5,12 +7,12 @@ class BeatLine extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      value: this.props.value || []
+      value: this.props.value
     };
   }
 
   onChangeCell(event, index) {
-    let value = this.props.value;
+    const { value } = this.state;
     value[index] = event.target.value;
     this.setState({ value });
   }
@@ -19,12 +21,11 @@ class BeatLine extends Component {
     const cells = Array(this.props.grid).fill(0).map((v, i) => {
       let cellContent = '';
       if (this.props.cellType === 'text') {
-        const value = (this.props.value && i < this.props.value.length) ? this.props.value[i] : '';
         cellContent = (
           <input
             maxLength={ 2 }
             onChange={ (event) => this.onChangeCell(event, i) }
-            value={ value }
+            value={ this.state.value[i] }
           />
         );
       } else {
@@ -48,13 +49,19 @@ class BeatLine extends Component {
 }
 
 BeatLine.propTypes = {
-  value: PropTypes.array,
-  label: PropTypes.string,
+  value: PropTypes.arrayOf(PropTypes.string),
+  label: PropTypes.string.isRequired,
   grid: PropTypes.number,
   cellType: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.element
   ])
+}
+
+BeatLine.defaultProps = {
+  grid: 16,
+  value: [],
+  cellType: 'text'
 }
 
 export const Unwrapped = BeatLine;
