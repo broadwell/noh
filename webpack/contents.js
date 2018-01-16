@@ -28,7 +28,7 @@ export function getSection(playName, sectionName, callback, error) {
     .then(res => {
       const props = res.data;
       axios
-        .get(props.narrative)
+        .get(`/${playName}/narratives/${sectionName}.html`)
         .then(resp => {
           props.narrative = resp.data;
           callback(props);
