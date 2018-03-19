@@ -1,7 +1,15 @@
 .cell--nohkan {
+  background-color: $color-channel-nohkan;
   position: relative;
 
   span {
     @include tooltip();
+  }
+}
+
+.measure--previous,
+.measure--next {
+  .cell--nohkan {
+    background-color: $grey-light;
   }
 }

@@ -1,7 +1,15 @@
 .cell--dance {
+  background-color: $color-channel-dance;
   position: relative;
 
   span {
     @include tooltip();
+  }
+}
+
+.measure--previous,
+.measure--next {
+  .cell--dance {
+    background-color: $grey-light;
   }
 }
