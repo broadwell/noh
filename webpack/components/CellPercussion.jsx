@@ -1,11 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-const CellPercussion = props => (
-  <div className={`cell cell--${props.length}`}>
-    <span className="truncate">{props.text}</span>
-  </div>
-);
+class CellPercussion extends Component {
+  render() {
+    const cellPercussionClass =
+      this.props.text.length > 0 ? "cell--percussion" : "";
+
+    return (
+      <div className={`cell cell--${this.props.length} ${cellPercussionClass}`}>
+        <span className="truncate">{this.props.text}</span>
+      </div>
+    );
+  }
+}
 
 CellPercussion.propTypes = {
   text: PropTypes.string.isRequired,

@@ -9,25 +9,30 @@ $grey-lightest: #f7f9fa;
 $black: #141515;
 $white: #fff;
 
-$purple: #7b65a6;
-$purple-shade-1: #9a88bf;
-$purple-shade-2: #bdb0d9;
+$purple:           #5d6bb0;
+$purple-shade:     #a3acd6;
+$purple-alpha:     rgba(93, 107, 176, 0.57);
+$purple-bg:        #e0e6ff;
 
-$blue-dark: #193a73;
-$blue-dark-shade-1: #395c99;
-$blue-dark-shade-2: #6385bf;
+$blue-dark:        #193a73;
+$blue-dark-shade:  #466496;
+$blue-dark-alpha:  rgba(25, 58, 115, 0.78);
+$blue-dark-bg:     #e0ecff;
 
-$blue-light: #65a6c9;
-$blue-light-shade-1: #87c1e0;
-$blue-light-shade-2: #93c9e6;
+$blue-light:       #1db1de;
+$blue-light-shade: #7ed3ed;
+$blue-light-alpha: rgba(29, 177, 222, 0.53);
+$blue-light-bg:    #e0f5ff;
 
-$green: #4d9990;
-$green-shade-1: #77c7be;
-$green-shade-2: #8cd1c9;
+$green:            #32d9c0;
+$green-shade:      #89f0e0;
+$green-alpha:      rgba(50, 216, 190, 0.44);
+$green-bg:         #e0fffb;
 
-$yellow: #e6dc73;
-$yellow-shade-1: #f2ea91;
-$yellow-shade-2: #fff9b3;
+$yellow:           #fdbc2c;
+$yellow-shade:     #feda84;
+$yellow-alpha:     rgba(253, 188, 44, 0.56);
+$yellow-bg:        #fff9e0;
 
 $orange: #e6ab45;
 $orange-shade-1: #f2c16d;
@@ -46,11 +51,15 @@ $border-color: rgba($grey-medium, 0.7);
 
 $color-channel-beat: $white;
 $color-channel-text: $white;
-$color-channel-nohkan: rgba($yellow-shade-2, 0.3);
-$color-channel-dance: rgba($orange-shade-2, 0.3);
+$color-channel-percussion-text: $green;
+$color-channel-percussion-bg: $green-bg;
+$color-channel-nohkan-text: $yellow;
+$color-channel-nohkan-bg: $yellow-bg;
+$color-channel-dance-text: $purple;
+$color-channel-dance-bg: $purple-bg;
 
+$color-character-aikyogen: $blue-light-shade;
+$color-character-shite: $green-shade;
+$color-character-waki-tsure: $yellow-shade;
 $color-character-jiutai: $red-shade-1;
-$color-character-aikyogen: $blue-light-shade-1;
-$color-character-shite: $green-shade-1;
 $color-character-waki: $orange-shade-1;
-$color-character-waki-tsure: $yellow-shade-1;

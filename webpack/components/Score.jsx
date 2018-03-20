@@ -124,7 +124,7 @@ class Score extends Component {
     ) {
       previous = this.createPhrase(this.state.previousPhrase, "previous");
     }
-    const current = this.createPhrase(this.state.currentPhrase);
+    const current = this.createPhrase(this.state.currentPhrase, "current");
     let next = "";
     if (
       this.state.nextPhrase !== this.state.currentPhrase &&

@@ -1,13 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-const CellNohkan = props => (
-  <div className={`cell cell--${props.length} cell--nohkan`}>
-    <span data-tooltip={props.text} className="truncate">
-      {props.text}
-    </span>
-  </div>
-);
+class CellNohkan extends Component {
+  render() {
+    const cellNohkanClass = this.props.text.length > 0 ? "cell--nohkan" : "";
+
+    return (
+      <div className={`cell cell--${this.props.length} ${cellNohkanClass}`}>
+        <span data-tooltip={this.props.text} className="truncate">
+          {this.props.text}
+        </span>
+      </div>
+    );
+  }
+}
 
 CellNohkan.propTypes = {
   text: PropTypes.string.isRequired,
