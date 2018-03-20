@@ -1,5 +1,6 @@
 .cell--nohkan {
-  background-color: $color-channel-nohkan;
+  background-color: $grey-light;
+  justify-content: flex-start;
   position: relative;
 
   span {
@@ -7,9 +8,9 @@
   }
 }
 
-.measure--previous,
-.measure--next {
+.measure--current {
   .cell--nohkan {
-    background-color: $grey-light;
+    background-color: $color-channel-nohkan-bg;
+    color: $color-channel-nohkan-text;
   }
 }

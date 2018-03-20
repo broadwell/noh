@@ -1,5 +1,6 @@
 .cell--dance {
-  background-color: $color-channel-dance;
+  background-color: $grey-light;
+  justify-content: flex-start;
   position: relative;
 
   span {
@@ -7,9 +8,9 @@
   }
 }
 
-.measure--previous,
-.measure--next {
+.measure--current {
   .cell--dance {
-    background-color: $grey-light;
+    background-color: $color-channel-dance-bg;
+    color: $color-channel-dance-text;
   }
 }

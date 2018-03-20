@@ -69,7 +69,7 @@
   height: $score-channel-height;
   padding: 0 0.25rem;
 
-  @include flex-container($justify: flex-start);
+  @include flex-container($justify: center);
 
   .measure__channel--large & {
     height: $score-channel-large-height;

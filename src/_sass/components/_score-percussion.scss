@@ -1,0 +1,10 @@
+.cell--percussion {
+  background-color: $grey-light;
+}
+
+.measure--current {
+  .cell--percussion {
+    background-color: $color-channel-percussion-bg;
+    color: $color-channel-percussion-text;
+  }
+}
