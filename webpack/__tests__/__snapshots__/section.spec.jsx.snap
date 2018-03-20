@@ -784,6 +784,11 @@ exports[`<Section> renders as expected 1`] = `
         "syllableNumber": Object {
           "grid": Array [
             Object {
+              "length": 2,
+              "start": 0,
+              "text": "",
+            },
+            Object {
               "length": 1,
               "start": 3,
               "style": "normal",
@@ -24163,6 +24168,11 @@ exports[`<Section> renders as expected 1`] = `
                   "syllableNumber": Object {
                     "grid": Array [
                       Object {
+                        "length": 2,
+                        "start": 0,
+                        "text": "",
+                      },
+                      Object {
                         "length": 1,
                         "start": 3,
                         "style": "normal",
@@ -40223,6 +40233,11 @@ exports[`<Section> renders as expected 1`] = `
                     "syllableNumber": Object {
                       "grid": Array [
                         Object {
+                          "length": 2,
+                          "start": 0,
+                          "text": "",
+                        },
+                        Object {
                           "length": 1,
                           "start": 3,
                           "style": "normal",
@@ -56084,6 +56099,94 @@ exports[`<Section> renders as expected 1`] = `
                     >
                       <ScoreTextLine
                         length={13}
+                        numberGrid={
+                          Array [
+                            Object {
+                              "length": 1,
+                              "start": 0,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 1,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 2,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 3,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 4,
+                              "style": "normal",
+                              "text": "5",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 5,
+                              "style": "normal",
+                              "text": "6",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 6,
+                              "style": "normal",
+                              "text": "7",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 7,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 8,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 9,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 10,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 11,
+                              "style": "normal",
+                              "text": "5",
+                              "voices": Array [],
+                            },
+                          ]
+                        }
                         rangeGrid={
                           Array [
                             Object {
@@ -56213,6 +56316,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={true}
                           key="textCell0"
                           length={1}
+                          number="1"
                           text="ma"
                           vocalRange="l"
                           voiceType="jiutai"
@@ -56224,7 +56328,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ma"
                             >
-                              ma
+                              <span>
+                                ma
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__character cell__character--jiutai cell__character--begin cell__character--end"
@@ -56244,6 +56353,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell1"
                           length={1}
+                          number="2"
                           text="ta"
                           vocalRange="l"
                           voiceType=""
@@ -56255,7 +56365,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ta"
                             >
-                              ta
+                              <span>
+                                ta
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56267,6 +56382,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell2"
                           length={1}
+                          number="3"
                           text="wa"
                           vocalRange="l"
                           voiceType=""
@@ -56278,7 +56394,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="wa"
                             >
-                              wa
+                              <span>
+                                wa
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56290,6 +56411,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell3"
                           length={1}
+                          number="4"
                           text="ga"
                           vocalRange="l"
                           voiceType=""
@@ -56301,7 +56423,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ga"
                             >
-                              ga
+                              <span>
+                                ga
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56313,6 +56440,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell4"
                           length={1}
+                          number="5"
                           text="cho"
                           vocalRange="l"
                           voiceType=""
@@ -56324,7 +56452,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="cho"
                             >
-                              cho
+                              <span>
+                                cho
+                              </span>
+                              <span>
+                                5
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56336,6 +56469,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell5"
                           length={1}
+                          number="6"
                           text="o"
                           vocalRange="l"
                           voiceType=""
@@ -56347,7 +56481,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="o"
                             >
-                              o
+                              <span>
+                                o
+                              </span>
+                              <span>
+                                6
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56359,6 +56498,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell6"
                           length={1}
+                          number="7"
                           text="no"
                           vocalRange="l"
                           voiceType=""
@@ -56370,7 +56510,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="no"
                             >
-                              no
+                              <span>
+                                no
+                              </span>
+                              <span>
+                                7
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56382,6 +56527,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell7"
                           length={1}
+                          number="1"
                           text="so"
                           vocalRange="l"
                           voiceType=""
@@ -56393,7 +56539,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="so"
                             >
-                              so
+                              <span>
+                                so
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56405,6 +56556,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell8"
                           length={1}
+                          number="2"
                           text="no"
                           vocalRange="l"
                           voiceType=""
@@ -56416,7 +56568,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="no"
                             >
-                              no
+                              <span>
+                                no
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56428,6 +56585,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell9"
                           length={1}
+                          number="3"
                           text="ha"
                           vocalRange="l"
                           voiceType=""
@@ -56439,7 +56597,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ha"
                             >
-                              ha
+                              <span>
+                                ha
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56451,6 +56614,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell10"
                           length={1}
+                          number="4"
                           text="ji"
                           vocalRange="l"
                           voiceType=""
@@ -56462,7 +56626,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ji"
                             >
-                              ji
+                              <span>
+                                ji
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56474,6 +56643,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell11"
                           length={1}
+                          number="5"
                           text="me"
                           vocalRange="l"
                           voiceType=""
@@ -56485,7 +56655,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="me"
                             >
-                              me
+                              <span>
+                                me
+                              </span>
+                              <span>
+                                5
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -56497,6 +56672,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell12"
                           length={1}
+                          number=""
                           text="(e)"
                           vocalRange="l"
                           voiceType=""
@@ -56508,7 +56684,10 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="(e)"
                             >
-                              (e)
+                              <span>
+                                (e)
+                              </span>
+                              <span />
                             </span>
                             <span
                               className="cell__range--low"
@@ -56781,6 +56960,78 @@ exports[`<Section> renders as expected 1`] = `
                     >
                       <ScoreTextLine
                         length={13}
+                        numberGrid={
+                          Array [
+                            Object {
+                              "length": 2,
+                              "start": 0,
+                              "text": "",
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 3,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 4,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 5,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 6,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 7,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 8,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 9,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 10,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 11,
+                              "style": "normal",
+                              "text": "5",
+                              "voices": Array [],
+                            },
+                          ]
+                        }
                         rangeGrid={
                           Array [
                             Object {
@@ -56886,6 +57137,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell0"
                           length={2}
+                          number=""
                           text=""
                           vocalRange=""
                           voiceType=""
@@ -56896,7 +57148,10 @@ exports[`<Section> renders as expected 1`] = `
                             <span
                               className="truncate"
                               title=""
-                            />
+                            >
+                              <span />
+                              <span />
+                            </span>
                           </div>
                         </CellText>
                         <CellText
@@ -56904,6 +57159,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell1"
                           length={1}
+                          number=""
                           text=""
                           vocalRange=""
                           voiceType=""
@@ -56914,7 +57170,10 @@ exports[`<Section> renders as expected 1`] = `
                             <span
                               className="truncate"
                               title=""
-                            />
+                            >
+                              <span />
+                              <span />
+                            </span>
                           </div>
                         </CellText>
                         <CellText
@@ -56922,6 +57181,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell2"
                           length={1}
+                          number="1"
                           text="ni"
                           vocalRange="m"
                           voiceType=""
@@ -56933,7 +57193,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ni"
                             >
-                              ni
+                              <span>
+                                ni
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -56945,6 +57210,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell3"
                           length={1}
+                          number="2"
                           text="n"
                           vocalRange="m"
                           voiceType=""
@@ -56956,7 +57222,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="n"
                             >
-                              n
+                              <span>
+                                n
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -56968,6 +57239,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell4"
                           length={1}
+                          number="3"
                           text="no"
                           vocalRange="m"
                           voiceType=""
@@ -56979,7 +57251,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="no"
                             >
-                              no
+                              <span>
+                                no
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -56991,6 +57268,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell5"
                           length={1}
+                          number="4"
                           text="o"
                           vocalRange="m"
                           voiceType=""
@@ -57002,7 +57280,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="o"
                             >
-                              o
+                              <span>
+                                o
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -57014,6 +57297,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell6"
                           length={1}
+                          number="1"
                           text="ji"
                           vocalRange="m"
                           voiceType=""
@@ -57025,7 +57309,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ji"
                             >
-                              ji
+                              <span>
+                                ji
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -57037,6 +57326,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell7"
                           length={1}
+                          number="2"
                           text="u"
                           vocalRange="m"
                           voiceType=""
@@ -57048,7 +57338,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="u"
                             >
-                              u
+                              <span>
+                                u
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -57060,6 +57355,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell8"
                           length={1}
+                          number="3"
                           text="ni"
                           vocalRange="l"
                           voiceType=""
@@ -57071,7 +57367,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="ni"
                             >
-                              ni
+                              <span>
+                                ni
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -57083,6 +57384,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell9"
                           length={1}
+                          number="4"
                           text="da"
                           vocalRange="l"
                           voiceType=""
@@ -57094,7 +57396,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="da"
                             >
-                              da
+                              <span>
+                                da
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -57106,6 +57413,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell10"
                           length={1}
+                          number="5"
                           text="i"
                           vocalRange="l"
                           voiceType=""
@@ -57117,7 +57425,12 @@ exports[`<Section> renders as expected 1`] = `
                               className="truncate"
                               title="i"
                             >
-                              i
+                              <span>
+                                i
+                              </span>
+                              <span>
+                                5
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -57129,6 +57442,7 @@ exports[`<Section> renders as expected 1`] = `
                           end={false}
                           key="textCell11"
                           length={1}
+                          number=""
                           text=""
                           vocalRange=""
                           voiceType=""
@@ -57139,7 +57453,10 @@ exports[`<Section> renders as expected 1`] = `
                             <span
                               className="truncate"
                               title=""
-                            />
+                            >
+                              <span />
+                              <span />
+                            </span>
                           </div>
                         </CellText>
                       </ScoreTextLine>
@@ -63590,6 +63907,11 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
         },
         "syllableNumber": Object {
           "grid": Array [
+            Object {
+              "length": 2,
+              "start": 0,
+              "text": "",
+            },
             Object {
               "length": 1,
               "start": 3,
@@ -86966,6 +87288,11 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                   "syllableNumber": Object {
                     "grid": Array [
                       Object {
+                        "length": 2,
+                        "start": 0,
+                        "text": "",
+                      },
+                      Object {
                         "length": 1,
                         "start": 3,
                         "style": "normal",
@@ -103026,6 +103353,11 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                     "syllableNumber": Object {
                       "grid": Array [
                         Object {
+                          "length": 2,
+                          "start": 0,
+                          "text": "",
+                        },
+                        Object {
                           "length": 1,
                           "start": 3,
                           "style": "normal",
@@ -118887,6 +119219,94 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                     >
                       <ScoreTextLine
                         length={13}
+                        numberGrid={
+                          Array [
+                            Object {
+                              "length": 1,
+                              "start": 0,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 1,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 2,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 3,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 4,
+                              "style": "normal",
+                              "text": "5",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 5,
+                              "style": "normal",
+                              "text": "6",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 6,
+                              "style": "normal",
+                              "text": "7",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 7,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 8,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 9,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 10,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 11,
+                              "style": "normal",
+                              "text": "5",
+                              "voices": Array [],
+                            },
+                          ]
+                        }
                         rangeGrid={
                           Array [
                             Object {
@@ -119016,6 +119436,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={true}
                           key="textCell0"
                           length={1}
+                          number="1"
                           text="ma"
                           vocalRange="l"
                           voiceType="jiutai"
@@ -119027,7 +119448,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ma"
                             >
-                              ma
+                              <span>
+                                ma
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__character cell__character--jiutai cell__character--begin cell__character--end"
@@ -119047,6 +119473,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell1"
                           length={1}
+                          number="2"
                           text="ta"
                           vocalRange="l"
                           voiceType=""
@@ -119058,7 +119485,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ta"
                             >
-                              ta
+                              <span>
+                                ta
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119070,6 +119502,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell2"
                           length={1}
+                          number="3"
                           text="wa"
                           vocalRange="l"
                           voiceType=""
@@ -119081,7 +119514,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="wa"
                             >
-                              wa
+                              <span>
+                                wa
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119093,6 +119531,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell3"
                           length={1}
+                          number="4"
                           text="ga"
                           vocalRange="l"
                           voiceType=""
@@ -119104,7 +119543,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ga"
                             >
-                              ga
+                              <span>
+                                ga
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119116,6 +119560,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell4"
                           length={1}
+                          number="5"
                           text="cho"
                           vocalRange="l"
                           voiceType=""
@@ -119127,7 +119572,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="cho"
                             >
-                              cho
+                              <span>
+                                cho
+                              </span>
+                              <span>
+                                5
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119139,6 +119589,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell5"
                           length={1}
+                          number="6"
                           text="o"
                           vocalRange="l"
                           voiceType=""
@@ -119150,7 +119601,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="o"
                             >
-                              o
+                              <span>
+                                o
+                              </span>
+                              <span>
+                                6
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119162,6 +119618,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell6"
                           length={1}
+                          number="7"
                           text="no"
                           vocalRange="l"
                           voiceType=""
@@ -119173,7 +119630,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="no"
                             >
-                              no
+                              <span>
+                                no
+                              </span>
+                              <span>
+                                7
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119185,6 +119647,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell7"
                           length={1}
+                          number="1"
                           text="so"
                           vocalRange="l"
                           voiceType=""
@@ -119196,7 +119659,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="so"
                             >
-                              so
+                              <span>
+                                so
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119208,6 +119676,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell8"
                           length={1}
+                          number="2"
                           text="no"
                           vocalRange="l"
                           voiceType=""
@@ -119219,7 +119688,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="no"
                             >
-                              no
+                              <span>
+                                no
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119231,6 +119705,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell9"
                           length={1}
+                          number="3"
                           text="ha"
                           vocalRange="l"
                           voiceType=""
@@ -119242,7 +119717,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ha"
                             >
-                              ha
+                              <span>
+                                ha
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119254,6 +119734,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell10"
                           length={1}
+                          number="4"
                           text="ji"
                           vocalRange="l"
                           voiceType=""
@@ -119265,7 +119746,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ji"
                             >
-                              ji
+                              <span>
+                                ji
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119277,6 +119763,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell11"
                           length={1}
+                          number="5"
                           text="me"
                           vocalRange="l"
                           voiceType=""
@@ -119288,7 +119775,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="me"
                             >
-                              me
+                              <span>
+                                me
+                              </span>
+                              <span>
+                                5
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119300,6 +119792,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell12"
                           length={1}
+                          number=""
                           text="(e)"
                           vocalRange="l"
                           voiceType=""
@@ -119311,7 +119804,10 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="(e)"
                             >
-                              (e)
+                              <span>
+                                (e)
+                              </span>
+                              <span />
                             </span>
                             <span
                               className="cell__range--low"
@@ -119584,6 +120080,78 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                     >
                       <ScoreTextLine
                         length={13}
+                        numberGrid={
+                          Array [
+                            Object {
+                              "length": 2,
+                              "start": 0,
+                              "text": "",
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 3,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 4,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 5,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 6,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 7,
+                              "style": "normal",
+                              "text": "1",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 8,
+                              "style": "normal",
+                              "text": "2",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 9,
+                              "style": "normal",
+                              "text": "3",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 10,
+                              "style": "normal",
+                              "text": "4",
+                              "voices": Array [],
+                            },
+                            Object {
+                              "length": 1,
+                              "start": 11,
+                              "style": "normal",
+                              "text": "5",
+                              "voices": Array [],
+                            },
+                          ]
+                        }
                         rangeGrid={
                           Array [
                             Object {
@@ -119689,6 +120257,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell0"
                           length={2}
+                          number=""
                           text=""
                           vocalRange=""
                           voiceType=""
@@ -119699,7 +120268,10 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                             <span
                               className="truncate"
                               title=""
-                            />
+                            >
+                              <span />
+                              <span />
+                            </span>
                           </div>
                         </CellText>
                         <CellText
@@ -119707,6 +120279,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell1"
                           length={1}
+                          number=""
                           text=""
                           vocalRange=""
                           voiceType=""
@@ -119717,7 +120290,10 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                             <span
                               className="truncate"
                               title=""
-                            />
+                            >
+                              <span />
+                              <span />
+                            </span>
                           </div>
                         </CellText>
                         <CellText
@@ -119725,6 +120301,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell2"
                           length={1}
+                          number="1"
                           text="ni"
                           vocalRange="m"
                           voiceType=""
@@ -119736,7 +120313,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ni"
                             >
-                              ni
+                              <span>
+                                ni
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -119748,6 +120330,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell3"
                           length={1}
+                          number="2"
                           text="n"
                           vocalRange="m"
                           voiceType=""
@@ -119759,7 +120342,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="n"
                             >
-                              n
+                              <span>
+                                n
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -119771,6 +120359,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell4"
                           length={1}
+                          number="3"
                           text="no"
                           vocalRange="m"
                           voiceType=""
@@ -119782,7 +120371,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="no"
                             >
-                              no
+                              <span>
+                                no
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -119794,6 +120388,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell5"
                           length={1}
+                          number="4"
                           text="o"
                           vocalRange="m"
                           voiceType=""
@@ -119805,7 +120400,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="o"
                             >
-                              o
+                              <span>
+                                o
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -119817,6 +120417,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell6"
                           length={1}
+                          number="1"
                           text="ji"
                           vocalRange="m"
                           voiceType=""
@@ -119828,7 +120429,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ji"
                             >
-                              ji
+                              <span>
+                                ji
+                              </span>
+                              <span>
+                                1
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -119840,6 +120446,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell7"
                           length={1}
+                          number="2"
                           text="u"
                           vocalRange="m"
                           voiceType=""
@@ -119851,7 +120458,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="u"
                             >
-                              u
+                              <span>
+                                u
+                              </span>
+                              <span>
+                                2
+                              </span>
                             </span>
                             <span
                               className="cell__range--medium"
@@ -119863,6 +120475,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell8"
                           length={1}
+                          number="3"
                           text="ni"
                           vocalRange="l"
                           voiceType=""
@@ -119874,7 +120487,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="ni"
                             >
-                              ni
+                              <span>
+                                ni
+                              </span>
+                              <span>
+                                3
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119886,6 +120504,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell9"
                           length={1}
+                          number="4"
                           text="da"
                           vocalRange="l"
                           voiceType=""
@@ -119897,7 +120516,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="da"
                             >
-                              da
+                              <span>
+                                da
+                              </span>
+                              <span>
+                                4
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119909,6 +120533,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell10"
                           length={1}
+                          number="5"
                           text="i"
                           vocalRange="l"
                           voiceType=""
@@ -119920,7 +120545,12 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                               className="truncate"
                               title="i"
                             >
-                              i
+                              <span>
+                                i
+                              </span>
+                              <span>
+                                5
+                              </span>
                             </span>
                             <span
                               className="cell__range--low"
@@ -119932,6 +120562,7 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                           end={false}
                           key="textCell11"
                           length={1}
+                          number=""
                           text=""
                           vocalRange=""
                           voiceType=""
@@ -119942,7 +120573,10 @@ exports[`<Section> with no singingStyle renders as expected 1`] = `
                             <span
                               className="truncate"
                               title=""
-                            />
+                            >
+                              <span />
+                              <span />
+                            </span>
                           </div>
                         </CellText>
                       </ScoreTextLine>

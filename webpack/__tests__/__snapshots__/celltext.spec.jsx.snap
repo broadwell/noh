@@ -8,7 +8,10 @@ exports[`<CellText> renders as expected 1`] = `
     className="truncate"
     title="ma"
   >
-    ma
+    <span>
+      ma
+    </span>
+    <span />
   </span>
   <span
     className="cell__character cell__character--jiutai cell__character--begin cell__character--end"
@@ -32,7 +35,10 @@ exports[`<CellText> renders as expected 2`] = `
     className="truncate"
     title="ma"
   >
-    ma
+    <span>
+      ma
+    </span>
+    <span />
   </span>
   <span
     className="cell__character cell__character--jiutai  cell__character--end"
@@ -56,7 +62,10 @@ exports[`<CellText> renders as expected 3`] = `
     className="truncate"
     title="ma"
   >
-    ma
+    <span>
+      ma
+    </span>
+    <span />
   </span>
   <span
     className="cell__character cell__character--jiutai cell__character--begin "
@@ -80,7 +89,10 @@ exports[`<CellText> renders as expected with no vocal range 1`] = `
     className="truncate"
     title="ma"
   >
-    ma
+    <span>
+      ma
+    </span>
+    <span />
   </span>
   <span
     className="cell__character cell__character--jiutai cell__character--begin cell__character--end"

@@ -43,7 +43,7 @@ const CellText = props => {
 
 CellText.propTypes = {
   text: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.string,
   length: PropTypes.number.isRequired,
   vocalRange: PropTypes.string,
   voiceType: PropTypes.string,
@@ -55,7 +55,8 @@ CellText.defaultProps = {
   vocalRange: "",
   voiceType: "",
   beginning: false,
-  end: false
+  end: false,
+  number: ""
 };
 
 export default CellText;

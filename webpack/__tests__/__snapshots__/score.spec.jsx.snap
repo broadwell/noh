@@ -29,6 +29,7 @@ exports[`<UnwrappedScore> handles null state correctly 1`] = `
       >
         <ScoreTextLine
           length={0}
+          numberGrid={Array []}
           rangeGrid={Array []}
           textGrid={Array []}
         />
@@ -139,6 +140,94 @@ exports[`<UnwrappedScore> handles null state correctly 1`] = `
       >
         <ScoreTextLine
           length={13}
+          numberGrid={
+            Array [
+              Object {
+                "length": 1,
+                "start": 0,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 1,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 2,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 3,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 4,
+                "style": "normal",
+                "text": "5",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 5,
+                "style": "normal",
+                "text": "6",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 6,
+                "style": "normal",
+                "text": "7",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 7,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 8,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 9,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 10,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 11,
+                "style": "normal",
+                "text": "5",
+                "voices": Array [],
+              },
+            ]
+          }
           rangeGrid={
             Array [
               Object {
@@ -403,6 +492,73 @@ exports[`<UnwrappedScore> handles null state correctly 1`] = `
       >
         <ScoreTextLine
           length={13}
+          numberGrid={
+            Array [
+              Object {
+                "length": 1,
+                "start": 3,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 4,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 5,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 6,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 7,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 8,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 9,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 10,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 11,
+                "style": "normal",
+                "text": "5",
+                "voices": Array [],
+              },
+            ]
+          }
           rangeGrid={
             Array [
               Object {
@@ -582,6 +738,7 @@ exports[`<UnwrappedScore> renders as expected 1`] = `
       >
         <ScoreTextLine
           length={0}
+          numberGrid={Array []}
           rangeGrid={Array []}
           textGrid={Array []}
         />
@@ -692,6 +849,94 @@ exports[`<UnwrappedScore> renders as expected 1`] = `
       >
         <ScoreTextLine
           length={13}
+          numberGrid={
+            Array [
+              Object {
+                "length": 1,
+                "start": 0,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 1,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 2,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 3,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 4,
+                "style": "normal",
+                "text": "5",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 5,
+                "style": "normal",
+                "text": "6",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 6,
+                "style": "normal",
+                "text": "7",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 7,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 8,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 9,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 10,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 11,
+                "style": "normal",
+                "text": "5",
+                "voices": Array [],
+              },
+            ]
+          }
           rangeGrid={
             Array [
               Object {
@@ -956,6 +1201,73 @@ exports[`<UnwrappedScore> renders as expected 1`] = `
       >
         <ScoreTextLine
           length={13}
+          numberGrid={
+            Array [
+              Object {
+                "length": 1,
+                "start": 3,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 4,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 5,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 6,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 7,
+                "style": "normal",
+                "text": "1",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 8,
+                "style": "normal",
+                "text": "2",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 9,
+                "style": "normal",
+                "text": "3",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 10,
+                "style": "normal",
+                "text": "4",
+                "voices": Array [],
+              },
+              Object {
+                "length": 1,
+                "start": 11,
+                "style": "normal",
+                "text": "5",
+                "voices": Array [],
+              },
+            ]
+          }
           rangeGrid={
             Array [
               Object {

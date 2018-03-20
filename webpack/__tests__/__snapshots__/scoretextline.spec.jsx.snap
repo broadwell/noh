@@ -7,6 +7,7 @@ Array [
     end={true}
     key="textCell0"
     length={1}
+    number="1"
     text="ma"
     vocalRange="l"
     voiceType="jiutai"
@@ -16,6 +17,7 @@ Array [
     end={false}
     key="textCell1"
     length={1}
+    number="2"
     text="ta"
     vocalRange="l"
     voiceType=""
@@ -25,6 +27,7 @@ Array [
     end={true}
     key="textCell2"
     length={1}
+    number="3"
     text="wa"
     vocalRange="l"
     voiceType="jiutai"
@@ -34,6 +37,7 @@ Array [
     end={true}
     key="textCell3"
     length={1}
+    number="4"
     text="ga"
     vocalRange="l"
     voiceType="shite"
@@ -43,6 +47,7 @@ Array [
     end={false}
     key="textCell4"
     length={1}
+    number="5"
     text="cho"
     vocalRange="l"
     voiceType=""
@@ -52,6 +57,7 @@ Array [
     end={false}
     key="textCell5"
     length={1}
+    number="6"
     text="o"
     vocalRange="l"
     voiceType=""
@@ -61,6 +67,7 @@ Array [
     end={true}
     key="textCell6"
     length={1}
+    number="7"
     text="no"
     vocalRange="l"
     voiceType="jiutai"
@@ -70,6 +77,7 @@ Array [
     end={false}
     key="textCell7"
     length={1}
+    number="1"
     text="so"
     vocalRange="l"
     voiceType=""
@@ -79,6 +87,7 @@ Array [
     end={false}
     key="textCell8"
     length={1}
+    number="2"
     text="no"
     vocalRange="l"
     voiceType=""
@@ -88,6 +97,7 @@ Array [
     end={false}
     key="textCell9"
     length={1}
+    number="3"
     text="ha"
     vocalRange="l"
     voiceType=""
@@ -97,6 +107,7 @@ Array [
     end={false}
     key="textCell10"
     length={1}
+    number="4"
     text="ji"
     vocalRange="l"
     voiceType=""
@@ -106,6 +117,7 @@ Array [
     end={false}
     key="textCell11"
     length={1}
+    number="5"
     text="me"
     vocalRange="l"
     voiceType=""
@@ -115,6 +127,7 @@ Array [
     end={true}
     key="textCell12"
     length={1}
+    number=""
     text="(e)"
     vocalRange="l"
     voiceType="shite"
@@ -122,11 +135,12 @@ Array [
 ]
 `;
 
-exports[`<ScoreTextLine> renders as expected by default 2`] = `
+exports[`<ScoreTextLine> renders as expected with empty text and number grid 1`] = `
 <CellText
   beginning={false}
   end={false}
   length={13}
+  number=""
   text=""
   vocalRange=""
   voiceType=""
