@@ -53,10 +53,12 @@ const ScoreTextLine = props => {
       }
     }
   }
-  const fullData = fillGrid(props.textGrid, props.length);
-  const textCells = fullData.map((cell, idx) => (
+  const numberData = fillGrid(props.numberGrid, props.length);
+  const textData = fillGrid(props.textGrid, props.length);
+  const textCells = textData.map((cell, idx) => (
     <CellText
       text={cell.text}
+      number={numberData[idx].text}
       length={cell.length}
       key={`textCell${idx}`} // eslint-disable-line react/no-array-index-key
       vocalRange={cell.vocalRange}
@@ -80,6 +82,13 @@ ScoreTextLine.propTypes = {
   ).isRequired,
   length: PropTypes.number.isRequired,
   rangeGrid: PropTypes.arrayOf(
+    PropTypes.shape({
+      start: PropTypes.number,
+      text: PropTypes.string,
+      length: PropTypes.number
+    })
+  ).isRequired,
+  numberGrid: PropTypes.arrayOf(
     PropTypes.shape({
       start: PropTypes.number,
       text: PropTypes.string,

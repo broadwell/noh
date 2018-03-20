@@ -31,7 +31,8 @@ const CellText = props => {
   return (
     <div className={`cell cell--${props.length} cell--text`}>
       <span title={props.text} className="truncate">
-        {props.text}
+        <span>{props.text}</span>
+        <span>{props.number}</span>
       </span>
       {typeSpan}
       {tooltipSpan}
@@ -42,6 +43,7 @@ const CellText = props => {
 
 CellText.propTypes = {
   text: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
   length: PropTypes.number.isRequired,
   vocalRange: PropTypes.string,
   voiceType: PropTypes.string,

@@ -64,6 +64,7 @@ class Score extends Component {
       <div className="measure__channel measure__channel--large">
         <ScoreTextLine
           textGrid={phrase ? phrase.syllableText.grid : []}
+          numberGrid={phrase ? phrase.syllableNumber.grid : []}
           length={beatNums.length}
           rangeGrid={phrase ? phrase.vocalRange.grid : []}
         />
