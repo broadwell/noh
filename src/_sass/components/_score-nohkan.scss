@@ -1,5 +1,7 @@
 .cell--nohkan {
   background-color: $grey-light;
+  border-bottom-color: $grey-medium;
+  border-right-color: $grey-medium;
   justify-content: flex-start;
   position: relative;
 
@@ -11,6 +13,7 @@
 .measure--current {
   .cell--nohkan {
     background-color: $color-channel-nohkan-bg;
+    border-bottom: 0.0625rem solid $color-channel-nohkan-border;
     color: $color-channel-nohkan-text;
   }
 }

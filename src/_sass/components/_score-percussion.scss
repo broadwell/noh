@@ -1,10 +1,13 @@
 .cell--percussion {
   background-color: $grey-light;
+  border-bottom-color: $grey-medium;
+  border-right-color: $grey-medium;
 }
 
 .measure--current {
   .cell--percussion {
     background-color: $color-channel-percussion-bg;
+    border-bottom: 0.0625rem solid $color-channel-percussion-border;
     color: $color-channel-percussion-text;
   }
 }

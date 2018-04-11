@@ -9,30 +9,30 @@ $grey-lightest: #f7f9fa;
 $black: #141515;
 $white: #fff;
 
-$purple:           #5d6bb0;
-$purple-shade:     #a3acd6;
-$purple-alpha:     rgba(93, 107, 176, 0.57);
-$purple-bg:        #e0e6ff;
+$purple:           hsla(230, 34%, 53%, 1);
+$purple-shade:     hsla(229, 38%, 74%, 1);
+$purple-alpha:     hsla(230, 34%, 53%, 0.57);
+$purple-bg:        hsla(228, 100%, 94%, 1);
 
-$blue-dark:        #193a73;
-$blue-dark-shade:  #466496;
-$blue-dark-alpha:  rgba(25, 58, 115, 0.78);
-$blue-dark-bg:     #e0ecff;
+$blue-dark:        hsla(218, 64%, 27%, 1);
+$blue-dark-shade:  hsla(218, 36%, 43%, 1);
+$blue-dark-alpha:  hsla(218, 64%, 27%, 0.78);
+$blue-dark-bg:     hsla(217, 100%, 94%, 1);
 
-$blue-light:       #1db1de;
-$blue-light-shade: #7ed3ed;
-$blue-light-alpha: rgba(29, 177, 222, 0.53);
-$blue-light-bg:    #e0f5ff;
+$blue-light:       hsla(203, 77%, 49%, 1);
+$blue-light-shade: hsla(203, 76%, 71%, 1);
+$blue-light-alpha: hsla(203, 77%, 49%, 0.53);
+$blue-light-bg:    hsla(209, 100%, 94%, 1);
 
-$green:            #32d9c0;
-$green-shade:      #89f0e0;
-$green-alpha:      rgba(50, 216, 190, 0.44);
-$green-bg:         #e0fffb;
+$green:            hsla(171, 69%, 52%, 1);
+$green-shade:      hsla(171, 77%, 74%, 1);
+$green-alpha:      hsla(171, 68%, 52%, 0.44);
+$green-bg:         hsla(172, 100%, 94%, 1);
 
-$yellow:           #fdbc2c;
-$yellow-shade:     #feda84;
-$yellow-alpha:     rgba(253, 188, 44, 0.56);
-$yellow-bg:        #fff9e0;
+$yellow:           hsla(41, 98%, 58%, 1);
+$yellow-shade:     hsla(42, 98%, 76%, 1);
+$yellow-alpha:     hsla(41, 98%, 58%, 0.56);
+$yellow-bg:        hsla(48, 100%, 94%, 1);
 
 $orange: #e6ab45;
 $orange-shade-1: #f2c16d;
@@ -51,11 +51,14 @@ $border-color: rgba($grey-medium, 0.7);
 
 $color-channel-beat: $white;
 $color-channel-text: $white;
-$color-channel-percussion-text: $green;
-$color-channel-percussion-bg: $green-bg;
+$color-channel-percussion-text: $blue-light;
+$color-channel-percussion-border: $blue-light-shade;
+$color-channel-percussion-bg: $blue-light-bg;
 $color-channel-nohkan-text: $yellow;
+$color-channel-nohkan-border: $yellow-shade;
 $color-channel-nohkan-bg: $yellow-bg;
 $color-channel-dance-text: $purple;
+$color-channel-dance-border: $purple-shade;
 $color-channel-dance-bg: $purple-bg;
 
 $color-character-aikyogen: $blue-light-shade;

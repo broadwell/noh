@@ -1,5 +1,7 @@
 .cell--dance {
   background-color: $grey-light;
+  border-bottom-color: $grey-medium;
+  border-right-color: $grey-medium;
   justify-content: flex-start;
   position: relative;
 
@@ -11,6 +13,7 @@
 .measure--current {
   .cell--dance {
     background-color: $color-channel-dance-bg;
+    border-bottom-color: $color-channel-dance-border;
     color: $color-channel-dance-text;
   }
 }
