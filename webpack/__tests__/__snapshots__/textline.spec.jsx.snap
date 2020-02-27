@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLine> renders as expected with active class 1`] = `
+<div
+  className="transcription__line active"
+>
+  <button
+    className="transcription__original"
+    onClick={[Function]}
+  >
+    <React.Fragment>
+      <strong>
+        KYŌGEN
+      </strong>
+      : 
+      another sample string
+    </React.Fragment>
+  </button>
+  <button
+    className="transcription__translation"
+    onClick={[Function]}
+  >
+    <React.Fragment>
+      <strong>
+        KYŌGEN
+      </strong>
+      : 
+      sample string
+    </React.Fragment>
+  </button>
+</div>
+`;
+
+exports[`<TextLine> renders as expected without active class 1`] = `
+<div
+  className="transcription__line"
+>
+  <button
+    className="transcription__original"
+    onClick={[Function]}
+  >
+    another sample string
+  </button>
+  <button
+    className="transcription__translation"
+    onClick={[Function]}
+  >
+    sample string
+  </button>
+</div>
+`;

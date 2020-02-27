@@ -1,0 +1,53 @@
+.second-level-menu__container {
+  background-color: $beige-dark;
+  box-shadow: 0 0.25rem 0.75rem $brown32;
+  position: relative;
+  z-index: 3;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform .2s linear;
+    transform: translateY(-100%);
+
+    &.visible {
+      transform: translateY(0);
+    }
+  }
+}
+
+.second-level-menu {
+  @include flex-container($justify: center);
+
+  li {
+    padding: 0 0.75rem;
+
+    a {
+      border-bottom-color: rgba($brown, 0);
+      border-bottom-style: solid;
+      border-bottom-width: 0.125rem;
+      color: $green;
+      display: inline-block;
+      padding: 0.6875rem 0 0.75rem 0;
+      transition: color $transition, border-bottom-color $transition;
+      text-decoration: none;
+
+      @include text(xxs);
+      @include uppercase();
+
+      &:hover {
+        border-bottom-color: $brown64;
+        color: $brown;
+      }
+    }
+
+    &.active {
+      a {
+        border-bottom-color: $brown;
+        color: $brown;
+        font-weight: $fw-bold;
+      }
+    }
+  }
+}

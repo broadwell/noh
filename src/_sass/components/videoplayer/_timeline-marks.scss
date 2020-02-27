@@ -1,0 +1,23 @@
+.time-marks {
+  border-top: $border;
+  border-bottom: $border;
+  height: $timeline-marks-height;
+  width: 100%;
+
+  @include flex-container($justify: flex-start, $align: flex-end);
+}
+
+.time {
+  border-left: $border;
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 0.25rem;
+
+  @include flex-container($justify: flex-start);
+  @include text(md);
+  @include truncate($display:flex);
+
+  &:first-child {
+    border-left: none;
+  }
+}

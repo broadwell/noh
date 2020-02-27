@@ -1,0 +1,8 @@
+<figure class="image-container">
+  <div class="wrapper">
+    <img src="{{ include.src }}" alt="">
+  </div>
+  {% if include.caption %}
+  <figcaption class="figure-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

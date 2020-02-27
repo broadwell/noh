@@ -1,0 +1,69 @@
+@mixin character-overlay($color, $character) {
+  border-left-color: $color;
+
+  & + .cell__tooltip {
+    border-left-color: $color;
+    border-top-color: $border-color;
+  }
+}
+
+.cell__character--jiutai,
+.cell__character--aikyogen,
+.cell__character--shite,
+.cell__character--waki,
+.cell__character--wakizure {
+  border-left-style: solid;
+  border-left-width: 0.1875rem;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.cell__character--jiutai     { @include character-overlay($color-character-jiutai, 'jiutai'); }
+.cell__character--aikyogen   { @include character-overlay($color-character-aikyogen, 'aikyogen'); }
+.cell__character--shite      { @include character-overlay($color-character-shite, 'shite'); }
+.cell__character--waki       { @include character-overlay($color-character-waki, 'waki'); }
+.cell__character--wakizure   { @include character-overlay($color-character-wakizure, 'wakizure'); }
+
+.cell__character .truncate {
+  left: 0.5rem;
+}
+
+.cell__tooltip {
+  background-color: $white;
+  border-left-style: solid;
+  border-left-width: 0.1875rem;
+  border-top-style: solid;
+  border-top-width: 0;
+  bottom: calc(100% - 0.0625rem);
+  font-weight: $fw-semibold;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  transition: height 50ms ease-in-out;
+  width: 100%;
+  @include text(tn);
+  @include uppercase();
+  line-height: $tooltip-height;
+  padding-left: calc(0.5rem - 0.1875rem);  // <left offset of span.truncate for text> - <width of colored border>
+
+  &.cell__tooltip--centered {
+    padding: 0;
+    text-align: center;
+  }
+
+  .measure--previous &,
+  .measure--next & {
+    background-color: $beige-light;
+  }
+}
+
+.cell--text:hover {
+  .cell__tooltip {
+    border-top-width: 0.0625rem;
+    height: $tooltip-height;
+  }
+}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShodanTimeline> renders as expected 1`] = `
+<div
+  className="shodan-map"
+>
+  <Connect(ShodanTimelineBlock)
+    duration={301}
+    intensity="17"
+    key="Noriji"
+    left="0%"
+    maxIntensity={21}
+    name="Noriji"
+    startTime={0}
+    totalDuration={1800}
+  />
+  <Connect(ShodanTimelineBlock)
+    duration={1200}
+    intensity="12"
+    key="Maibataraki"
+    left="16.72222222222222%"
+    maxIntensity={21}
+    name="Maibataraki"
+    startTime={301}
+    totalDuration={1800}
+  />
+</div>
+`;

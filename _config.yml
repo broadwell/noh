@@ -13,32 +13,84 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Exploring Noh Theater
+email: tbd@tbd.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  An interactive, intermedia analysis of Noh Theater.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
 
 # Build settings
 source: src
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+kramdown:
+  footnote_backlink_inline: true
+# theme: minima
+
+# Collection settings
+collections:
+  hashitomi:
+    output: true
+    permalink: /:collection/:path/
+  kokaji:
+    output: true
+    permalink: /:collection/:path/
+  plays:
+    output: true
+    permalink: /:path/
+  libretti:
+    output: true
+    permalink: /:path/
+  music:
+    output: true
+    permalink: /:collection/:path/
+  movement:
+    output: true
+    permalink: /:collection/:path/
+  catalog-of-shodan:
+    output: true
+    permalink: /:collection/:path/
+  staging:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - favicon/
+
+# required for Travis: https://jekyllrb.com/docs/continuous-integration/travis-ci/
+exclude: [vendor]
+
+keep_files:  # all these files are built and/or copied to the _site/ folder by webpack
+  - assets/play.bundle.js
+  - assets/section.bundle.js
+  - assets/vanilla-back-to-top.min.js
+  - data
+  - android-chrome-192x192.png
+  - android-chrome-512x512.png
+  - apple-touch-icon.png
+  - browserconfig.xml
+  - favicon.ico
+  - favicon-16x16.png
+  - favicon-32x32.png
+  - mstile-70x70.png
+  - mstile-144x144.png
+  - mstile-150x150.png
+  - mstile-310x150.png
+  - mstile-310x310.png
+  - safari-pinned-tab.svg
+  - site.webmanifest
+
+plugins:
+  - jekyll-autoprefixer

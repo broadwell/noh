@@ -3,18 +3,13 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{{ layout.body-class }}">
 
-    {% include header.html %}
+    <header class="header{% if layout.transparent-header %} header--transparent{% endif %}">
+      {% include header.html %}
+    </header>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    <script type="text/javascript" src="/assets/bundle.js" charset="utf-8"></script>
-    {% include footer.html %}
+    {{ content }}
 
   </body>
 

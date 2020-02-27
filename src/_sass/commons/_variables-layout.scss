@@ -1,0 +1,54 @@
+/* Wrapper */
+
+$number-columns: 12;
+$col-width: 4rem;
+$gutter-width: 1rem;
+
+$wrapper-small: 40rem;
+$wrapper-media: 50rem;
+$wrapper-medium: 60rem;
+$wrapper-large: 76rem;
+// $wrapper-large: $number-columns*$col-width + ($number-columns - 1)*$gutter-width;
+
+/* Header */
+
+$header-small-height: 4rem;
+
+/* Videoplayer layout */
+
+$video-player-bottom-margin: 1rem;
+$video-player-height: calc(100vh - #{$header-small-height} - #{$video-player-bottom-margin});
+$border: 0.0625rem solid $border-color;
+
+
+/* Play timeline */
+
+$timeline-marks-height: 1.25rem;
+$timeline-acts-height: 1.5rem;
+$timeline-label-group-width: 3rem;
+$timeline-labels-width: 15rem;
+$timeline-channel-height: 2rem;
+$timeline-channel-shodan-height: 4rem;
+$timeline-empty-score-height: 8rem;
+
+$intermedia-table-cell: 1.75rem;
+$shodan-map-height-play: (7 * $intermedia-table-cell) + $timeline-marks-height;
+$shodan-map-height-section: 10rem;
+// $intermedia-height: $shodan-map-height-play + $timeline-marks-height + $timeline-acts-height;
+$intermedia-height: $shodan-map-height-play + $timeline-acts-height;
+
+/* Score */
+
+$score-label-width: 9rem;
+$score-cell-width: 2.5rem;
+$score-channel-height: 1.5rem;
+$score-channel-large-height: 3rem;
+$score-grid-columns: 16;
+
+/* Highlighted text component */
+
+$transcription-text-height: 10rem;
+
+/* Tooltip component */
+
+$tooltip-height: 2rem;

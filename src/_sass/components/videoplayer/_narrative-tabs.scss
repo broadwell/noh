@@ -1,0 +1,47 @@
+.react-tabs {}
+  
+.react-tabs__tab-list {
+  border-bottom-color: rgba($score_blue-light, 0);
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625rem;
+  margin: 0;
+  padding: 0 1rem;
+
+  @include flex-container($justify:flex-start, $align:stretch);
+}
+
+.react-tabs__tab  {
+  background-color: $white;
+  border-bottom-color: $brown16;
+  border-bottom-style: solid;
+  border-bottom-width: 0.25rem;
+  color: $green64;
+  cursor: pointer;
+  flex: 1;
+  font-weight: $fw-semibold;
+  padding: 0.5rem;
+  text-align: center;
+
+  @include text(xxs);
+  @include uppercase();
+  @include truncate();
+}
+
+.react-tabs__tab--selected {
+  border-bottom-color: $green;
+  color: $green;
+}
+
+.react-tabs__tab-panel {}
+
+.react-tabs__tab-panel--selected {}
+
+.sidebar__container {
+  .react-tabs__tab-list {
+    left: 0;
+    min-width: 18rem;
+    position: fixed;
+    top: 7rem;
+    width: 35%;
+  }
+}  

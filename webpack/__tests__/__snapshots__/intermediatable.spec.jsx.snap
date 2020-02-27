@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InterMediaTable> renders as expected while connected 1`] = `
+<IntermediaTable
+  currentTime={10}
+  dispatch={[Function]}
+  play="hashitomi"
+  sections={
+    Array [
+      Object {
+        "dancePresent": Object {
+          "value": "Dance to text",
+        },
+        "endTime": Object {
+          "value": 180,
+        },
+        "intensity": Object {
+          "number": "5",
+        },
+        "nokhanPresent": Object {
+          "value": "Non Congruent",
+        },
+        "numberOfPercussion": Object {
+          "value": "Otsuzumi + Kotsuzumi + Taiko",
+        },
+        "numberVoices": Object {
+          "value": "Waki/Waki Tsure",
+        },
+        "percussion": Object {
+          "value": "Non Congruent",
+        },
+        "sectionName": Object {
+          "value": "Nanori",
+        },
+        "sectionUrl": "kokaji/nanori",
+        "startTime": Object {
+          "value": 0,
+        },
+        "text": Object {
+          "value": "Sashinori - Non Congruent",
+        },
+        "voice": Object {
+          "value": "Sung - Non Congruent",
+        },
+      },
+      Object {
+        "dancePresent": Object {
+          "value": "Dance to text",
+        },
+        "endTime": Object {
+          "value": 300,
+        },
+        "intensity": Object {
+          "number": "5",
+        },
+        "nokhanPresent": Object {
+          "value": "Non Congruent",
+        },
+        "numberOfPercussion": Object {
+          "value": "Otsuzumi + Kotsuzumi + Taiko",
+        },
+        "numberVoices": Object {
+          "value": "Waki/Waki Tsure",
+        },
+        "percussion": Object {
+          "value": "Non Congruent",
+        },
+        "sectionName": Object {
+          "value": "Mondo",
+        },
+        "sectionUrl": "kokaji/mondo",
+        "startTime": Object {
+          "value": 181,
+        },
+        "text": Object {
+          "value": "Sashinori - Non Congruent",
+        },
+        "voice": Object {
+          "value": "Sung - Non Congruent",
+        },
+      },
+    ]
+  }
+/>
+`;
+
+exports[`<UnwrappedIntermediaTable> renders as expected 1`] = `
+<div
+  className="intermedia-table"
+>
+  <IntermediaTitle
+    section="Nanori"
+    sectionUrl="kokaji/nanori"
+  />
+  <IntermediaElement
+    fieldName="Voices"
+    fieldValue="Waki/Waki Tsure"
+  />
+  <IntermediaElement
+    fieldName="Type of voice"
+    fieldValue="Sung - Non Congruent"
+  />
+  <IntermediaElement
+    fieldName="Text"
+    fieldValue="Sashinori - Non Congruent"
+  />
+  <IntermediaElement
+    fieldName="Percussion"
+    fieldValue="Non Congruent"
+  />
+  <IntermediaElement
+    fieldName="Type of percussion"
+    fieldValue="Otsuzumi + Kotsuzumi + Taiko"
+  />
+  <IntermediaElement
+    fieldName="Nohkan"
+    fieldValue="Non Congruent"
+  />
+  <IntermediaElement
+    fieldName="Dance"
+    fieldValue="Dance to text"
+  />
+</div>
+`;

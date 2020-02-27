@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CellPercussion> renders as expected by default 1`] = `
+<div
+  className="cell cell--14 cell--percussion "
+>
+  mitsuji
+</div>
+`;
+
+exports[`<CellPercussion> renders as expected with a note 1`] = `
+<div
+  className="cell cell--14 cell--percussion cell--percussion-chin"
+/>
+`;

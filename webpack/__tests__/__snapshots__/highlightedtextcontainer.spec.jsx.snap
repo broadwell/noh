@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UnwrappedHighlightedTextContainer> renders as expected unconnected to redux 1`] = `
+<div>
+  <HighlightedText
+    currentPhraseID="I/1"
+    phrases={
+      Array [
+        Object {
+          "endTime": 10,
+          "phraseID": "I/1",
+          "startTime": 0,
+          "transcription": "transcription line 1",
+          "translation": "translation line 1",
+        },
+        Object {
+          "endTime": 20,
+          "phraseID": "I/2",
+          "startTime": 11,
+          "transcription": "transcription line 2",
+          "translation": "translation line 2",
+        },
+      ]
+    }
+    singingStyle=""
+  />
+</div>
+`;

@@ -1,0 +1,10 @@
+.timeline {
+  background-color: $white;
+  height: $intermedia-height;
+
+  @include flex-container($justify: flex-start, $align: flex-start);
+}
+
+.timeline__container {
+  flex-grow: 1;
+}

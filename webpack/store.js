@@ -1,9 +1,19 @@
-import { createStore } from 'redux';
-import reducer from './reducers';
+import { createStore } from "redux";
+import reducer, { DEFAULT_STATE } from "./reducers";
+import { reduxDevTools } from "./utils";
+import { loadState as loadStateFromLocalStorage } from "./localStorage";
+import { loadState as loadStateFromSessionStorage } from "./sessionStorage";
 
-const store = createStore(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+const initializeStore = browserStorageKey =>
+  createStore(
+    reducer,
+    Object.assign(
+      {},
+      DEFAULT_STATE,
+      loadStateFromLocalStorage(browserStorageKey),
+      loadStateFromSessionStorage(browserStorageKey)
+    ),
+    reduxDevTools()
+  );
 
-export default store;
+export default initializeStore;

@@ -2,7 +2,13 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
+vendor/bundle
+.bundle/config
 
-src/assets/bundle.js
+data/
+src/_data/
 
 coverage/
+
+.DS_Store
+.ignore

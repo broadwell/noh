@@ -1,0 +1,25 @@
+$svg-big: 9;
+$svg-small: 1;
+
+.shodan-map__container {
+  .time-indicator-container {
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .time-indicator {
+    background-image: url('./images/current-position-indicator.svg');
+    background-repeat: no-repeat;
+    height: calc(100% + #{$timeline-acts-height});
+    position: absolute;
+    top: -$timeline-acts-height;
+    width: 0.6875rem;
+    z-index: 10;
+    cursor: col-resize;
+    left: -4px;
+  }
+}

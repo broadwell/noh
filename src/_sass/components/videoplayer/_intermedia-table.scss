@@ -1,0 +1,103 @@
+@keyframes fadeRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.intermedia-table {
+  flex-shrink: 0;
+  flex-basis: 20rem;
+  border-left: $border;
+}
+
+.intermedia__element {
+  border-bottom: $border;
+  height: $intermedia-table-cell;
+
+  @include flex-container($justify: flex-start);
+}
+
+.intermedia__element--title {
+  border-top: $border;
+  height: $timeline-acts-height + $timeline-marks-height;
+
+  .intermedia__label,
+  .intermedia__value {
+    font-weight: 700;
+    height: $timeline-acts-height + $timeline-marks-height;
+    padding: 0 0.5rem;
+
+  }
+  .intermedia__label {
+    @include text(xxs);
+  }
+  
+  .intermedia__value {
+    @include text(sm);
+    
+    a {
+      text-decoration: none;
+      @include flex-container($justify: flex-start, $align: baseline);
+
+      span {
+        display: inline-block;
+        margin-right: 0.25rem;
+        @include truncate($width: 9rem);
+      }
+
+      i {
+        animation-timing-function: ease-in-out;
+        animation-duration: 600ms;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        font-size: $fs-display-tn;
+        line-height: $lh-display-tn;
+        position: relative;
+        top: -0.0625rem;
+      }
+
+      &:hover {
+        i {
+          animation-name: fadeRight;
+        }
+      }
+    }
+
+  }
+}
+
+.intermedia__label,
+.intermedia__value {
+  height: $intermedia-table-cell;
+  padding: 0 0.5rem;
+
+  @include flex-container($justify: flex-start);
+
+ .intermedia__value__none {
+    font-style: italic;
+    color: $brown32;
+  }
+}
+
+.intermedia__label {
+  border-right: $border;
+  font-weight: 700;
+  width: 8.5rem;
+
+  @include text(tn);
+  @include uppercase();
+}
+
+.intermedia__value {
+  flex-grow: 1;
+
+  @include text(xs);
+}

@@ -1,0 +1,118 @@
+.highlighted-text__container {
+  .transcription {
+    .transcription__title {
+      display: none;
+    }
+  }
+  .sidebar__collapsable-title--libretto {
+    .transcription__title {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  &.is-open {
+    .transcription {
+      .transcription__title {
+        display: block;
+      }
+    }
+    .sidebar__collapsable-title--libretto {
+      .transcription__title {
+        display: none;
+      }
+
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .sidebar__collapsable-title--libretto {
+    &.disabled {
+      opacity: .4;
+      pointer-events: none;
+    }
+  }
+
+  &.disabled {
+    h3,
+    svg path {
+      color: $brown40;
+    }
+
+    .transcription,
+    .transcription__title {
+      display: none;
+    }
+
+    &.is-open {
+      .sidebar__collapsable-title--libretto {
+        padding: 0.5rem 1rem;
+
+        svg {
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
+.transcription__title {
+  color: $brown;
+  padding: 0.5rem 1rem;
+
+  @include flex-container($justify:space-between, $align:baseline);
+
+  p {
+    @include text(xs);
+
+    span {
+      font-weight: $fw-bold;
+
+      @include text(xxs);
+      @include uppercase();
+    }
+  }
+}
+
+.transcription__text {
+  font-family: $font-text;
+  max-height: 0;
+  overflow-y: auto;
+
+  .highlighted-text__container.is-open & {
+    max-height: $transcription-text-height;
+  }
+}
+
+.transcription__line {
+	color: $brown;
+  font-family: $font-text;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 1rem;
+
+  @include flex-container($justify:flex-start, $align:flex-start);
+
+  &.active {
+    background-color: $beige-light;
+  }
+}
+
+.transcription__original,
+.transcription__translation {
+  background-color: rgba($white, 0);
+  cursor: pointer;
+  flex: 1;
+  font-family: $font-text;
+  text-align: left;
+
+  @include text(xs);
+}
+
+.transcription__original {
+  padding-right: 0.25rem;
+}
+.transcription__translation {
+  padding-left: 0.25rem;
+}

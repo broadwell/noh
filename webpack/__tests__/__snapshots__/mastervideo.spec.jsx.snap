@@ -3,17 +3,24 @@
 exports[`<MasterVideo> renders as expected 1`] = `
 <MasterVideo
   currentTime={0}
+  currentTimeOrigin=""
+  tracks={Array []}
+  updateCurrentTime={null}
   videoUrl=""
 >
   <div>
     <video
       controls={true}
+      controlsList="nodownload"
       id="player"
-      src=""
-    />
-    <h3>
-      0
-    </h3>
+      onSeeking={[Function]}
+      onTimeUpdate={[Function]}
+    >
+      <source
+        src=""
+        type="video/mp4"
+      />
+    </video>
   </div>
 </MasterVideo>
 `;

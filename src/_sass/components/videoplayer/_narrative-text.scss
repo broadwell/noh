@@ -1,0 +1,48 @@
+section.tabbed-narrative {
+  padding: 1rem 0;
+
+  p {
+    color: $brown;
+    font-family: $font-text;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    @include text(sm, 'text');
+
+    * {
+      font-family: $font-text;
+    }
+  }
+
+  h2, h3, h4 {
+    color: $brown;
+  }
+
+  h2 {
+    font-weight: $fw-bold;
+    padding-bottom: 0.5rem;
+
+    @include text(md);
+  }
+
+  h3 {
+    font-weight: $fw-semibold;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+    @include text(sm);
+  }
+
+  h4 {
+    font-weight: $fw-semibold;
+    margin-bottom: 0.5rem;
+
+    @include text(xs);
+  }
+
+  [data-highlight-shodans]:hover {
+    background-color: $beige-light;
+  }
+}
+
+

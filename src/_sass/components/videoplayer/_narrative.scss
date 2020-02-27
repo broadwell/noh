@@ -1,0 +1,47 @@
+@import "narrative-tabs";
+@import "narrative-text";
+
+.narrative {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 0 1rem 0 0;
+  margin: 2rem 0 0 1rem;
+
+  .collapsible {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+
+    &::before {
+      align-items: center;
+      content: $fa-var-caret-right;
+      display: flex;
+      font-family: $font-icon;
+      font-size: $fs-display-xxs;
+      height: 1rem;
+      justify-content: center;
+      line-height: 1;
+      text-align: center;
+      transform-origin: 50% 50%;
+      transform: rotate(90deg);
+      transition: transform 300ms ease-in-out;
+      width: 1rem;
+    }
+
+    &.collapsible-with-background + * {
+      background-color: $green08;
+      padding: 1rem;
+    }
+
+    &.collapsible-closed {
+      &::before {
+        transform: rotate(0deg);
+      }
+
+      & + * {
+        display: none;
+      }
+    }
+  }
+}

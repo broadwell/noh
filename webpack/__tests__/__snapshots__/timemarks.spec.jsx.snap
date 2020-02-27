@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TimeMarks> renders as expected 1`] = `
+<div
+  className="time-marks"
+>
+  <div
+    className="time"
+    key="marker0"
+  >
+    00:00:00
+  </div>
+  <div
+    className="time"
+    key="marker600"
+  >
+    00:10:00
+  </div>
+  <div
+    className="time"
+    key="marker1200"
+  >
+    00:20:00
+  </div>
+  <div
+    className="time"
+    key="marker1800"
+  >
+    00:30:00
+  </div>
+  <div
+    className="time"
+    key="marker2400"
+  >
+    00:40:00
+  </div>
+  <div
+    className="time"
+    key="marker3000"
+  >
+    00:50:00
+  </div>
+  <div
+    className="time"
+    key="marker3600"
+  >
+    01:00:00
+  </div>
+</div>
+`;
