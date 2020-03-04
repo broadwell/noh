@@ -160,6 +160,10 @@
       padding-right: 1rem;
       position: relative;
 
+      &:active {
+        pointer-events: none;
+      }
+
       @include text(xs);
 
       &::after {
