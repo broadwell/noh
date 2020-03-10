@@ -11,8 +11,8 @@
 
   <nav class="header__nav">
     <ul>
-      <li class="dropdown-menu{% if page.menu-active == 'about' or page.menu-active == 'about' %} active{% endif %}">
-        <a class="header__main-link dropdown-menu__trigger">About</a>
+      <li class="dropdown-menu{% if page.menu-active == 'about' %} active{% endif %}">
+        <div class="header__main-link dropdown-menu__trigger">About</div>
         <ul class="dropdown-menu__list">
           <li class="dropdown-menu__title">About</li>
           <li><a href="/guide/">Guide</a></li>
@@ -22,16 +22,16 @@
 
         </ul>
       </li>
-      <li class="dropdown-menu{% if page.menu-active == 'intermedia' or page.menu-active == 'intermedia' %} active{% endif %}">
-        <a class="header__main-link dropdown-menu__trigger">Intermedia</a>
+      <li class="dropdown-menu{% if page.menu-active == 'intermedia' %} active{% endif %}">
+        <div class="header__main-link dropdown-menu__trigger">Intermedia</div>
         <ul class="dropdown-menu__list">
           <li class="dropdown-menu__title">Intermedia</li>
           <li><a href="/about-intermedia/">À propos</a></li>
           <li><a href="/about-intermedia/#noh-as-intermedia">Noh as Intermedia</a></li>
         </ul>
       </li>
-      <li class="dropdown-menu{% if page.menu-active == 'plays' or page.menu-active == 'plays' %} active{% endif %}">
-        <a class="header__main-link dropdown-menu__trigger">Plays</a>
+      <li class="dropdown-menu{% if page.menu-active == 'plays' %} active{% endif %}">
+        <div class="header__main-link dropdown-menu__trigger">Plays</div>
         <ul class="dropdown-menu__list">
           <li class="dropdown-menu__title">Plays</li>
           <li><a href="/plays/">Why These Plays? </a></li>
@@ -41,7 +41,7 @@
         </ul>
       </li>
       <li class="dropdown-menu{% if page.menu-active == 'elements' %} active{% endif %}">
-        <a class="header__main-link dropdown-menu__trigger">Elements</a>
+        <div class="header__main-link dropdown-menu__trigger">Elements</div>
         <ul class="dropdown-menu__list">
           <li class="dropdown-menu__title">Element</li>
           <li><a href="/elements/">Elements of Noh</a></li>
